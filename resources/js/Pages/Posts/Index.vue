@@ -46,7 +46,7 @@ const deletePost = (id: number) => {
 }
 
 const formatDate = (dateString: string) => {
-  return new Date(dateString).toLocaleDateString('ro-RO', {
+  return new Date(dateString).toLocaleDateString(undefined, {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
